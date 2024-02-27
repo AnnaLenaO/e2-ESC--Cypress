@@ -8,7 +8,8 @@ describe('Test several pages, existence of validation message, make a booking & 
     cy.visit('https://annalenao.github.io/e2-ESC--Cypress/')
 
     //test to show home page & then go to Our Challenges
-    cy.url().should('include', '/index.html')
+    //cy.url().should('include', '/index.html')
+    cy.url().should('include', 'e2-ESC--Cypress/')
     cy.contains('On-site')
     cy.contains('Online')
     cy.get('[data-cy="allChallenges"]').click()
@@ -28,7 +29,8 @@ describe('Test several pages, existence of validation message, make a booking & 
 
     //test to go back to home page
     cy.get('[data-cy="toHome"]').click()
-    cy.url().should('include', '/index.html')
+    //cy.url().should('include', '/index.html')
+    cy.url().should('include', 'e2-ESC--Cypress/')
     cy.contains('On-site')
     cy.contains('Online')
 

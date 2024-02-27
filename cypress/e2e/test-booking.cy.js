@@ -5,7 +5,7 @@ let bookingDate = new Date().toJSON().slice(0, 10);
 
   it('clicking first "button" and later submit form', () => {
     //cy.visit('http://127.0.0.1:5501/filter.htm')
-    cy.visit('https://annalenao.github.io/e2-ESC--Cypress/filter.htm/')
+    cy.visit('https://annalenao.github.io/e2-ESC--Cypress/filter.htm')
     cy.contains('Book this room').click({ multiple: true })
     
     //step 1
