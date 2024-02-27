@@ -5,7 +5,8 @@ describe('Test error message when submitting without an email', () => {
 
     it('try make a booking without & with a user email', () => {
 
-        cy.visit('http://127.0.0.1:5501/filter.htm')
+        //cy.visit('http://127.0.0.1:5501/filter.htm')
+        cy.visit('https://annalenao.github.io/e2-ESC--Cypress/filter.htm')
         cy.contains('Book this room').click({ multiple: true })
 
         //step 1

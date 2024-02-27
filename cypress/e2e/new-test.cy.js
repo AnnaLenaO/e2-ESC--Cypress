@@ -4,7 +4,8 @@ describe('Test several pages, existence of validation message, make a booking & 
   let bookingDate = new Date().toJSON().slice(0, 10);
 
   it('start at homepage & end at on-site after several interactions', () => {
-    cy.visit('http://127.0.0.1:5501/index.html')
+    //cy.visit('http://127.0.0.1:5501/index.html')
+    cy.visit('https://annalenao.github.io/e2-ESC--Cypress/')
 
     //test to show home page & then go to Our Challenges
     cy.url().should('include', '/index.html')
